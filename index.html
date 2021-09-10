@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>JS Clock</title>
+</head>
+<body>
+  <div class="background active" style="background-image: url(./img/bg1.jpg)"></div>
+  <div class="background" style="background-image: url(./img/bg2.jpg)"></div>
+  <div class="background" style="background-image: url(./img/bg3.jpg)"></div>
+  <div class="background" style="background-image: url(./img/bg4.jpg)"></div>
+  <div class="background" style="background-image: url(./img/bg5.jpg)"></div>
+  <div class="arrow" id="left"><i class="fas fa-chevron-left"></i></div>
+  <div class="arrow" id="right"><i class="fas fa-chevron-right"></i></div>
+  <div class="clock">
+    <div class="clock-face">
+      <div class="hand hour"></div>
+      <div class="hand minute"></div>
+      <div class="hand second"></div>
+    </div>
+    <div class="time"></div>
+    <div class="date"></div>
+    <svg width="70" height="70" viewBox="0 0 32 32" class="hour-donut">
+      <circle class="hour-donut-hole" cx="16" cy="16" r="15.91549430918954" fill="transparent"></circle>
+      <circle class="hour-donut-segment" cx="16" cy="16" r="15.91549430918954" fill="transparent" stroke="#ffffff" stroke-width="2" stroke-dasharray="100 0" stroke-dashoffset="25"></circle>
+    </svg>
+    <svg width="70" height="70" viewBox="0 0 32 32" class="minute-donut">
+      <circle class="minute-donut-hole" cx="16" cy="16" r="15.91549430918954" fill="transparent"></circle>
+      <circle class="minute-donut-segment" cx="16" cy="16" r="15.91549430918954" fill="transparent" stroke="#ffffff" stroke-width="2" stroke-dasharray="100 0" stroke-dashoffset="25"></circle>
+    </svg>
+    <svg width="70" height="70" viewBox="0 0 32 32" class="second-donut">
+      <circle class="second-donut-hole" cx="16" cy="16" r="15.91549430918954" fill="transparent"></circle>
+      <circle class="second-donut-segment" cx="16" cy="16" r="15.91549430918954" fill="transparent" stroke="#ffffff" stroke-width="2" stroke-dasharray="100 0" stroke-dashoffset="25"></circle>
+    </svg>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
